@@ -54,10 +54,11 @@ A complete end-to-end machine learning project to **predict house prices in Beng
 
 ## 📂 Project Structure
 
-├── server.py # Flask app
-├── util.py # Core logic for model prediction
-├── artifacts/
-│ ├── Bengaluru_House_Price_model.pickle
-│ └── columns.json # Location and column data
-├── client/ (optional)
-│ └── index.html # Frontend UI
+Bengaluru-House-Price-Predictor/
+├── server.py # Flask application entry point
+├── util.py # Utility functions for loading model and making predictions
+├── artifacts/ # Serialized model and metadata
+│ ├── Bengaluru_House_Price_model.pickle # Trained regression model (saved using pickle)
+│ └── columns.json # List of feature columns (used for encoding input)
+├── client/ # (Optional) Frontend UI
+│ └── index.html # Basic HTML form to interact with the API
